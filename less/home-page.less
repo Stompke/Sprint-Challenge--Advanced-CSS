@@ -31,6 +31,11 @@ nav {
       text-decoration: none;
       font-size: 1.8rem;
       padding: 10px;
+      &:hover{
+        color: #fff;
+        text-shadow: 2px 2px black;
+
+      }
     }
   }
 }
@@ -125,17 +130,15 @@ nav {
 
       .btn {
         .sign-up-btn-mixin(@btn-bg-color, @porcelain);
+        padding: 20px 0px;
       
         &:hover {
           .sign-up-btn-mixin(@porcelain, @btn-bg-color);
           cursor: pointer;
-
-        }
-        @media @phone {
-          display: block;
           padding: 20px 0px;
 
         }
+        
       }
     }
 
@@ -164,6 +167,7 @@ nav {
 
     @media @phone {
       flex-flow: column;
+      padding: 15px;
     }
     
     .half-section{

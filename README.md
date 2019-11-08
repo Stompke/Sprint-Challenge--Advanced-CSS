@@ -43,7 +43,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-        > It sets your base font-size at 10px so it is easy to choose a font-size with 'rem' without having to use a calculator.
+        > It sets your root font-size at 10px so it is easy to choose a font-size with 'rem' without having to use a calculator.
 
 4. How would you describe preprocessing to someone new to CSS?
 
