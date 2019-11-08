@@ -29,11 +29,15 @@ nav {
 }
 
 .home {
+
+  
   
   .intro {
+    
 
     img {
       border-radius: 5px;
+      width: 100%;
     }
 
     h2 {
@@ -56,6 +60,20 @@ nav {
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+        padding: 0px 10px;
+      }
+
+      &:nth-child(2){
+        .hide-for-mobile()
+      }
+      &:nth-child(3){
+        .hide-for-mobile()
+      }
+      
+        
     }
   }
 
@@ -78,8 +96,17 @@ nav {
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-flow: column-reverse;
+      align-items: center;
+      padding: 15px;
+      margin-top: 15px;
+    }
+
     .walk-text {
       width: 50%;
+
+      .mobile-width-100();
 
       h3 {
         margin-bottom: 10px;
@@ -91,10 +118,15 @@ nav {
 
       .btn {
         .sign-up-btn-mixin(@btn-bg-color, @porcelain);
-
+      
         &:hover {
           .sign-up-btn-mixin(@porcelain, @btn-bg-color);
           cursor: pointer;
+        }
+        @media @phone {
+          display: block;
+          padding: 20px 0px;
+
         }
       }
     }
@@ -102,6 +134,12 @@ nav {
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      .mobile-width-100();
+      @media @phone {
+        margin:0px;
+        margin-bottom: 15px;
+      }
       
       img {
         width: 100%;
