@@ -1,5 +1,33 @@
 // Home Content
 
+nav {
+  background: @nav-bg;
+  color: @nav-font;
+  border-bottom: 2px solid @nav-border;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  
+
+  .logo {
+    padding: 15px 0;
+  }
+
+  .links {
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    
+
+    a {
+      color: @nav-font;
+      text-decoration: none;
+      font-size: 1.8rem;
+      padding: 10px;
+    }
+  }
+}
+
 .home {
   
   .intro {
