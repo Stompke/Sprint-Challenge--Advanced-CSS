@@ -227,6 +227,25 @@ nav .links a {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  color: #F6F7F8;
+  background: #22283A;
+  font-size: 2.1rem;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 30px;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background: #F6F7F8;
+  font-size: 2.1rem;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 30px;
+  cursor: pointer;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;

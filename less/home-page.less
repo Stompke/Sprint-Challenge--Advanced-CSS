@@ -90,6 +90,12 @@ nav {
       }
 
       .btn {
+        .sign-up-btn-mixin(@btn-bg-color, @porcelain);
+
+        &:hover {
+          .sign-up-btn-mixin(@porcelain, @btn-bg-color);
+          cursor: pointer;
+        }
       }
     }
 
