@@ -8,7 +8,18 @@
     text-align: center;
     display: inline-block;
     padding: 5px 30px;
+
 }
+
+.animations-mixin(@speed, @delay) {
+    animation: myfirst @speed ease-in @delay 1 alternate;
+    animation-fill-mode: both;
+    // position: relative;
+    @keyframes myfirst {
+        0% {opacity: 0%;}
+        100% {opacity: 100px;}
+    }
+  }
 
 .hide-for-mobile(){
     @media @phone{
